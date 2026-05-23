@@ -327,6 +327,20 @@ li {
     flex-wrap: wrap;
     align-content: center;
     overflow: hidden;
+
+}
+
+.card:hover h3{
+    color: red;
+}
+
+.card.card2:hover h3{
+    color: #155dfc;
+}
+
+
+.card.card3:hover h3{
+    color: #833ab4;
 }
 
 .card-body {
@@ -342,6 +356,7 @@ li {
 }
 
 .content h3{
+    transition: 0.15s ease-out;
     font-size: 28px;
     margin-bottom: 10px;
     line-height: 34px;
@@ -452,6 +467,7 @@ li {
 }
 
 .item{
+    cursor: pointer;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -459,9 +475,18 @@ li {
     margin-bottom: 20px;
 }
 
-.item2{
-    margin-bottom: 0;
+
+.item:hover h4{
+    color: red;
 }
+.item.item2:hover h4{
+    color: #155dfc;
+}
+.item.item3:hover h4{
+    color: #ad46ff;
+}
+
+
 
 .item span{
     font-weight: 900;
@@ -479,6 +504,7 @@ li {
 }
 
 .item h4{
+    transition: 0.15s ease-out;
     font-size: 20px;
     line-height: 26px;
 }
