@@ -307,12 +307,12 @@ li {
 
 
 .latest-article .container .header h2{
-    font-size: 48px;    
+    font-size: 44px;    
     font-weight: 900;
 }
 .latest-article .container .header span{
     background-color: #000000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     box-shadow: 4px 4px black;
     transform: rotate(2deg);
@@ -355,7 +355,7 @@ li {
 .spn-design{
     text-align: center;
     margin: 20px 0;
-    width: 10%;
+    width: 70px;
     box-shadow: 3px 3px 0 var(--black);
     padding: 5px 5px;
     background-color: #ffdf20;
@@ -480,7 +480,7 @@ li {
 }
 
 .category{
-    padding: 30px;
+    padding: 0 30px 30px;
     position: relative;
     border: 4px solid var(--black);
     box-shadow: 8px 8px 0 var(--black);
@@ -631,8 +631,30 @@ li {
 
 }
 
+.card{
+    transition: 0.2s ease-out;
+}
+
+.card:hover{
+    transform: translate(-2px, -2px);
+}
+
+.card:hover .clr1{
+    color: #e7000b;
+}
+
+.card:hover .clr2{
+    color: #2b7fff;
+
+}
+.card:hover .clr3{
+    color: #833ab4;
+}
+
+
+
 .card .image{
-    width: 23%;
+    width: 150px;
 }
 
 .card .title h3{
@@ -642,7 +664,9 @@ li {
 
 }
 
-
+.card .icons{
+    display: flex;
+}
 
 .card .icons img{
     color: #fff;
@@ -653,13 +677,41 @@ li {
     display: flex;
     flex-direction: row;
     gap: 20px;
-} 
-
-.card .icons ul li a{
-    background-color: #000000;
-    padding: 10px;
 }
 
+
+
+
+
+
+.card .icons ul li a{
+    transition: 0.2s ease-out;
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom:10px ;
+}
+
+.card .icons ul li a:hover{
+    border: 1px solid;
+    transform: translate(-2px);
+    box-shadow: 3px 3px black;
+
+}
+
+.card .icons ul li a.icon-clr:hover{
+    background-color: #2b7fff;
+}
+
+.card .icons ul li a.icon-clr2:hover{
+    background-color:#155dfc ;
+}
+
+.card .icons ul li a.icon-clr3:hover{
+
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+
+
+}
 
 .community {
     background-color: var(--white);
